@@ -1,0 +1,15 @@
+# the profile used for `cargo build`
+[profile.dev]
+panic = "abort"  # disable stack unwinding on panic
+
+# the profile used for `cargo build --release`
+[profile.release]
+panic = "abort" # disable stack unwinding on panic
+
+[package]
+name = "my-project"
+version = "0.1.0"
+edition = "2021"
+authors = ["pioneerlfn"]
+
+[dependencies]
